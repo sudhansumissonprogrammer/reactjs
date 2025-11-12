@@ -1,0 +1,152 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+      
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #111;
+}
+
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;      /* center cards horizontally */
+  align-items: flex-start;      /* align rows nicely */
+  gap: 35px;                    /* space between cards */
+  padding: 20px 10px;           /* some inner padding */
+  max-width: 1200px;            /* keeps layout neat on big screens */
+  margin: 0 auto;               /* center the whole grid */
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 30px;
+  justify-content: space-between;
+}
+.card .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+.top img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #dadada;
+
+}
+.top button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dadada;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 5px;
+  gap: 3px;
+  background-color: transparent;
+
+
+}
+.bottom{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #dadada;
+  padding: 10px;
+  margin-top: 39px;
+}
+.bottom button{
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  padding: 12px;  border: none;
+}
+.bottom button:hover{
+  background-color: grey;
+  cursor: pointer;
+}
+.bottom h3{
+  font-size: 17px;
+}
+.bottom p{
+  color: grey;
+  font-size: 14px;
+}
+.center{
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.center h3{
+  font-size: 16px;
+  font-weight: 600;
+}
+.center h3 span{
+  font-size: 11px;
+  font-weight: 60;
+  color: grey;
+
+}
+.center h2{
+  font-size: 20px;
+  font-weight: 600;
+}
+.center .m{
+  font-size: 15px;
+  display: flex;
+  border-radius: 10px;
+  margin-top: 10px;
+  gap: 10px;
+}
+.center .m h4{  
+  font-size: 14px;
+ padding: 4px 10px;
+  background-color: #dadada;
+  color: #111;
+  font-weight: 500;
+}
+/*
+.center .m h4{
+  background-color: #eef6ff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #3a86ff;
+}
+.bottom div{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.bottom h3{
+  font-size: 20px;
+  font-weight: 600;
+}
+.bottom p{      
+  font-size: 14px;
+  color: grey;
+}
+.bottom button{
+  padding: 10px 20px;
+  background-color: #3a86ff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+} 
